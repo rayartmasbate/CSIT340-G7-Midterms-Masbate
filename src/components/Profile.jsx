@@ -1,7 +1,7 @@
 import Bio from "./Bio";
 import StatCard from "./StatCard";
 import { useState } from "react";
-
+import Hire from "./Hire";
 
 export default function Profile() {
     const [followers, setFollowers] = useState(0);
@@ -50,6 +50,7 @@ export default function Profile() {
                 Reset
               </button>
             </div>
+            <Hire rate={rate} />
         </div>
     )
 }
